@@ -141,3 +141,10 @@ FROM vendas
 GROUP BY produto
 HAVING SUM(receita) > 10000;
 
+-- exercício 10
+SELECT autores.nome, COUNT(livros.id) AS numero_de_livros
+FROM autores
+LEFT JOIN livros ON autores.id = livros.autor_id
+GROUP BY autores.id
+HAVING COUNT(livros.id) > 2;
+
