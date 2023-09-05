@@ -201,3 +201,5 @@ FROM vendas
 GROUP BY produto
 ORDER BY quantidade_de_vendas DESC
 LIMIT 1;
+
+--commit DOZE esta escrito errado (cochilar)
